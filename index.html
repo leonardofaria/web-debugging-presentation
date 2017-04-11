@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Web debugging - Leonardo Faria</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/github.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Web debugging</h1>
+        </section>
+
+        <section>
+          <h1>Microsoft Virtual Machines</h1>
+
+          <ul>
+            <li>90-days virtual machines</li>
+						<li>Different OS / IE / Edge versions</li>
+						<li>Don't depend on external solutions</li>
+            <li><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/">Free</a></li>
+          </ul>
+        </section>
+
+        <section>
+					<img src="img/windows.png">
+				</section>
+
+        <section>
+          <h1>iOS Simulator</h1>
+
+					<ul>
+						<li>Different devices and iOS</li>
+						<li>Don't depend on external solutions</li>
+						<li>Xcode > Simulator</li>
+						<li>Safari: Develop > Simulator</li>
+					</ul>
+        </section>
+
+				<section>
+					<h1>No Mac?</h1>
+
+					<ul>
+						<li><a href="http://bit.ly/2po7jmn">RemoteDebug iOS WebKit Adapter</a></li>
+						<li>Used in VS Code</li>
+					</ul>
+				</section>
+
+				<section>
+          <h1>Android</h1>
+
+					<ul>
+						<li>chrome://inspect</li>
+						<li><a href="https://developers.google.com/web/tools/chrome-devtools/remote-debugging/">Guide</a></li>
+					</ul>
+        </section>
+
+				<section>
+					<h1>No Android?</h1>
+
+					<ul>
+						<li><a href="https://www.genymotion.com/">Genymotion</a></li>
+						<li><a href="https://developer.android.com/studio/run/managing-avds.html">Android Virtual Devices</a></li>
+					</ul>
+				</section>
+
+				<section>
+          <h1>console.*</h1>
+
+					<ul>
+						<li>console.log</li>
+						<li>console.dir</li>
+						<li>console.table</li>
+						<li><a href="https://developers.google.com/web/tools/chrome-devtools/remote-debugging/">Guide</a></li>
+					</ul>
+        </section>
+
+				<section>
+          <h1>ngrok</h1>
+
+					<ul>
+						<li>Easier way to expose local connections</li>
+						<li>Setup ~/.ngrok2/ngrok.yml</li>
+						<li>ngrok start all</li>
+					</ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        history: true,
+        progress: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
