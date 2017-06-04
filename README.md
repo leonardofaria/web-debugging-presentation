@@ -1,6 +1,6 @@
 # Riot
 
-Slides of my "Riot" presentation. [Examples](https://github.com/leonardofaria/riotjs-examples)
+Slides of my "Web Debugging - Different techniques to get job done" presentation.
 
 - - -
 
